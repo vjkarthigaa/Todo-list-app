@@ -49,8 +49,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <div>
-          My Todo App
+        <div className="header">
+          <h2 style={{ margin: '5px' }}>My Todo App</h2>
+
           <br />
           <input
             type="text"
@@ -58,32 +59,35 @@ class App extends React.Component {
             value={this.props.newItem}
             onChange={e => this.updateInput("newItem", e.target.value)}
           />
-          <button
+          <button class="addBtn"
             onClick={() => this.addItem()}
           >
             Add
     </button>
-          <br />
-          <ul>
+        </div>
+        <br />
+        
+          <ul  className="theList">
+            
             {this.state.list.map(item => {
               return (
-                <div className="TodoItem" key={item.id}>
+              <li>
                   <input type="checkbox"
                     id={item.id}
-                    value={item.value}/>&nbsp;&nbsp;&nbsp;<label
+                    value={item.value} /><label
                       for={item.id}>
-                      {item.value} &nbsp;&nbsp;&nbsp;
-                      <button
-                        onClick={() => this.deleteItem(item.id)}
-                      >
-                        X
+                    {item.value}
+                      <button className="close"
+                      onClick={() => this.deleteItem(item.id)}
+                    >
+                      X
                   </button>
-                    </label> 
-                  </div>
+                  </label>
+              </li>
               )
             })}
           </ul>
-        </div>
+      
       </div>
 
     );
