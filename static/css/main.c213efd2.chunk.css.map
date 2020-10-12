@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,mCACE,UAAW,CACX,4BACF","file":"main.c213efd2.chunk.css","sourcesContent":["input[type=checkbox]:checked + label {\r\n  color:black;\r\n  text-decoration: line-through;\r\n}"]}

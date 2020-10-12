@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Todo-list-app_Karthigaa/static/css/main.c213efd2.chunk.css",
+    "main.js": "/Todo-list-app_Karthigaa/static/js/main.2cc3f3b9.chunk.js",
+    "main.js.map": "/Todo-list-app_Karthigaa/static/js/main.2cc3f3b9.chunk.js.map",
+    "runtime-main.js": "/Todo-list-app_Karthigaa/static/js/runtime-main.1ab86459.js",
+    "runtime-main.js.map": "/Todo-list-app_Karthigaa/static/js/runtime-main.1ab86459.js.map",
+    "static/css/2.8aa5a7f8.chunk.css": "/Todo-list-app_Karthigaa/static/css/2.8aa5a7f8.chunk.css",
+    "static/js/2.5c58a866.chunk.js": "/Todo-list-app_Karthigaa/static/js/2.5c58a866.chunk.js",
+    "static/js/2.5c58a866.chunk.js.map": "/Todo-list-app_Karthigaa/static/js/2.5c58a866.chunk.js.map",
+    "index.html": "/Todo-list-app_Karthigaa/index.html",
+    "precache-manifest.ea9a4f59505cc5b890bd90522544d3cf.js": "/Todo-list-app_Karthigaa/precache-manifest.ea9a4f59505cc5b890bd90522544d3cf.js",
+    "service-worker.js": "/Todo-list-app_Karthigaa/service-worker.js",
+    "static/css/2.8aa5a7f8.chunk.css.map": "/Todo-list-app_Karthigaa/static/css/2.8aa5a7f8.chunk.css.map",
+    "static/css/main.c213efd2.chunk.css.map": "/Todo-list-app_Karthigaa/static/css/main.c213efd2.chunk.css.map",
+    "static/js/2.5c58a866.chunk.js.LICENSE.txt": "/Todo-list-app_Karthigaa/static/js/2.5c58a866.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1ab86459.js",
+    "static/css/2.8aa5a7f8.chunk.css",
+    "static/js/2.5c58a866.chunk.js",
+    "static/css/main.c213efd2.chunk.css",
+    "static/js/main.2cc3f3b9.chunk.js"
+  ]
+}
