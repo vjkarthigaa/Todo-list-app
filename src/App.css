@@ -141,7 +141,32 @@ input {
   display: flex;
 }
 
+ li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
+li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+li:hover {
+  background: #ddd;
+}
+.fa {
+  font-size: 5px;
+}
  /* .check {
   background-color: white;
 }  */

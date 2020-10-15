@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus, faWindowClose, faCheckSquare, faUndo } from '@fortawesome/free-solid-svg-icons'
+import { faPlus, faWindowClose, faCheckCircle, faUndoAlt } from '@fortawesome/free-solid-svg-icons'
 
 class App extends React.Component {
   constructor(props) {
@@ -14,7 +14,7 @@ class App extends React.Component {
     };
 
     this.handleCheck = this.handleCheck.bind(this);
-    //this.undoCrossLine = this.undoCrossLine(this);
+    this.undoCrossLine = this.undoCrossLine.bind(this);
   }
 
 
@@ -83,12 +83,12 @@ class App extends React.Component {
 
     }));
     //hide chckbtn
-    //document.getElementById("checkbtn").style.display = "none";
+    //document.getElementById("checkbtn").style.display = "hidden";
 
     //show undobtn 
     //document.getElementById("undobtn").style.display = "block";
 
-    //document.getElementById('closebtn').style.visibility = 'hidden';
+    //document.getElementById('undobtn').style.visibility = 'shown';
   }
 
 
@@ -99,10 +99,10 @@ class App extends React.Component {
     document.getElementById("listtext").style.textDecoration = "none";
 
     //hide undobtn 
-    //document.getElementById("undobtn").style.display = "none";
+    //document.getElementById("undobtn").style.visibility = "shown";
 
     //show chckbtn
-    //document.getElementById("checkbtn").style.display = "block";
+    //document.getElementById("checkbtn").style.visibility = "block";
 
   }
 
@@ -148,22 +148,22 @@ class App extends React.Component {
                 <button id="checkbtn" className="check"
                   // onClick={this.crossLine}
                   onClick={event => this.handleCheck(item.id, event)}
+                      
                 >
-                  <span className="mx-2 fa-lg" >
-                    <FontAwesomeIcon icon={faCheckSquare} />
+                  <span className="mx-2 fa-xs" >
+                    <FontAwesomeIcon icon={faCheckCircle} />
                   </span>
                 </button>
                 <button id="undobtn"
-                  className="undo"
+                        className="undo"
                   //style={{display:"none"}}
                   onClick={event => this.undoCrossLine(item.id, event)}
 
                 >
-                  <span className="mx-2 fa-lg" >
-                    <FontAwesomeIcon icon={faUndo} />
+                  <span className="mx-2 fa-xs" >
+                    <FontAwesomeIcon icon={faUndoAlt} />
                   </span>
                 </button>
-
 
                 <button className="close"
                   onClick={() => this.deleteItem(item.id)}
