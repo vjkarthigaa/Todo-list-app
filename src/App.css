@@ -42,24 +42,24 @@ ul li {
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd) {
+/* ul li:nth-child(odd) {
   background: #f9f9f9;
-}
+} */
 
 /* Darker background-color on hover */
-ul li:hover {
+/* ul li:hover {
   background: #ddd;
-}
+} */
 
 /* When clicked on, add a background color and strike out text */
-ul li.checked {
+/* ul li.checked {
   background: #888;
   color: #fff;
   text-decoration: line-through;
-}
+} */
 
 /* Add a "checked" mark when clicked on */
-ul li.checked::before {
+/* ul li.checked::before {
   content: '';
   position: absolute;
   border-color: #fff;
@@ -70,11 +70,11 @@ ul li.checked::before {
   transform: rotate(45deg);
   height: 15px;
   width: 7px;
-}
+} */
 
 
 /* Style the close button */
- .close {
+ /* .close {
   position: absolute;
   right: 0;
   top: 0;
@@ -84,7 +84,7 @@ ul li.checked::before {
 .close:hover {
   background-color: #f44336;
   color: white;
-} 
+}  */
 
 /* Style the header */
 .header {
@@ -127,8 +127,36 @@ input {
   background-color: #bbb;
 }
 
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 1px solid silver;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
 
-input[type=checkbox]:checked + label {
+
+ /* .check {
+  background-color: white;
+}  */
+
+/* .close {
+  background-color: white;
+} */
+
+/* .crossed-line {
+  text-decoration: line-through;
+} */
+
+
+
+/* input[type=checkbox]:checked + label {
   color:black;
   text-decoration: line-through;
-}
+} */
